@@ -7,10 +7,10 @@ export default function App() {
   const Stack = createNativeStackNavigator();
 
   return (
-    <UserContextProvider>
+    <UserContext>
       <NavigationContainer>
         <MyStack></MyStack>
       </NavigationContainer>
-    </UserContextProvider>
+    </UserContext>
   );
 }
