@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react';
-import {View, ActivityIndicator, Button} from 'react-native';
+import React from 'react';
+import {View, Button} from 'react-native';
+import { ActivityIndicator } from 'react-native-paper';
+
 
 import { styles } from '../styles/Styles';
 
@@ -17,7 +19,7 @@ export default function PreLoad({navigation}) {
       <View style={styles.container}>
         <ImgLogo style='imgLogo' />
         <Title title={"Pet's Hostes"} txtStyle="txtTitle"/>
-        <ActivityIndicator style={styles.loadingIcon}/>
+        <ActivityIndicator animating={true} size={'large'} />
 
         <CustomButton title="COMEÇAR" onPress={logar} />     
         </View>

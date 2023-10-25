@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import { Header } from '@rneui/themed';
 
 import { styles } from '../styles/Styles';
 import IconLogo from './ImgLogo';
@@ -23,3 +22,4 @@ const CustomHeader: React.FunctionComponent<HeaderProps> = ({ subTitle }) => {
  );
 }
 export default CustomHeader;
+
